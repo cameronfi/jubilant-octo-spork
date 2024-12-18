@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Teknologiaratkaisut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(63,94,251);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(252,70,107);stop-opacity:1" /></linearGradient></defs><rect width="800" height="400" fill="url(%23grad)" /><circle cx="200" cy="200" r="100" fill="rgba(255,255,255,0.3)" /><circle cx="600" cy="200" r="100" fill="rgba(255,255,255,0.3)" /></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-blue-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Cameron Teknologiaratkaisut</h1>
+            <button id="hamburger" class="sm:hidden flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <nav id="menu" class="hidden sm:flex gap-4">
+                <a href="#etusivu" class="hover:underline">Etusivu</a>
+                <a href="#yhteystiedot" class="hover:underline">Yhteystiedot</a>
+                <a href="#tietoturva" class="hover:underline">Tietoturva</a>
+                <a href="#tietosuoja" class="hover:underline">Tietosuoja</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Johtavat teknologiaratkaisut</h2>
+            <p class="text-lg mb-6">Vahvistamme yrityksiä ja yksilöitä innovatiivisilla digitaalisilla ratkaisuilla.</p>
+            <a href="#yhteystiedot" class="bg-blue-600 text-white px-6 py-3 rounded shadow-lg hover:bg-blue-500">Ota yhteyttä</a>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="etusivu" class="py-8">
+            <h2 class="text-3xl font-bold mb-4">Miksi valita Cameron.fi?</h2>
+            <p class="text-lg">Cameron Teknologiaratkaisut erikoistuu huippuluokan teknologiaratkaisuihin, jotka vastaavat nopeatahtisen digitaalisen maiseman vaatimuksiin. Tarvitsetpa turvallisia alustoja, tehokkaita järjestelmiä tai innovatiivisia työkaluja, me autamme.</p>
+        </section>
+
+        <section id="yhteystiedot" class="py-8">
+            <h2 class="text-3xl font-bold mb-4">Yhteystiedot</h2>
+            <p class="text-lg">Kumppanisi seuraavaan digitaaliseen muutokseen. Ota yhteyttä sähköpostitse: <a href="mailto:yhteys@cameron.fi" class="text-blue-600 underline">yhteys@cameron.fi</a></p>
+        </section>
+
+        <section id="tietoturva" class="py-8">
+            <h2 class="text-3xl font-bold mb-4">Maailmanluokan tietoturva</h2>
+            <p class="text-lg">Tietoturva on meille ensisijaisen tärkeää. Käytämme kehittyneitä teknologioita ja alan parhaita käytäntöjä varmistaaksemme, että tietosi pysyvät aina turvassa.</p>
+        </section>
+
+        <section id="tietosuoja" class="py-8">
+            <h2 class="text-3xl font-bold mb-4">Tietosuoja, johon voit luottaa</h2>
+            <p class="text-lg">Arvostamme luottamustasi ja kunnioitamme yksityisyyttäsi. Lue lisää läpinäkyvistä tietosuojakäytännöistämme, jotka on suunniteltu suojaamaan sinua ja tietojasi.</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Cameron.fi. Digitaalisen tulevaisuuden voimavara Suomessa.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
